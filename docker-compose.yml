@@ -1,13 +1,15 @@
-version: '3.9'
+version: '2.4'
 
 services:
   myapp:
     build: .
     environment:
-      - DB_HOST= db
-      - DB_NAME= docter
-      - DB_USER= govind
-      - DB_PASSWORD= govind123
+      - DB_HOST=db
+      - DB_NAME=docter
+      - DB_USER=govind
+      - DB_PASSWORD=govind123
+    ports:
+    - "8080:8080"
     depends_on:
       - db
   db:
