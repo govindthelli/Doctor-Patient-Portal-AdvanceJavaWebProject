@@ -4,10 +4,10 @@ services:
   myapp:
     build: .
     environment:
-      - DB_HOST=db
-      - DB_NAME=docter
-      - DB_USER=govind
-      - DB_PASSWORD=govind123
+      - DB_HOST= db
+      - DB_NAME= docter
+      - DB_USER= govind
+      - DB_PASSWORD= govind123
     depends_on:
       - db
   db:
